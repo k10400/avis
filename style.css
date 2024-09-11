@@ -457,3 +457,80 @@ gallery-container {
   .archive-image.active  {
     border: 2px solid green;
   }
+
+
+  /* Add a toggle button for the navigation bar */
+.navbar-toggle {
+    display: none;
+  }
+  
+  /* Style the navigation bar for mobile devices */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+    .navbar-toggle {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navbar-toggle:hover {
+      background-color: #444;
+    }
+    .navbar-toggle:focus {
+      outline: none;
+    }
+    /* Show the navigation bar when the toggle button is clicked */
+    .navbar-toggle:checked + .navbar {
+      display: block;
+    }
+  }
+
+
+
+  /* Resize the header image for mobile devices */
+@media only screen and (max-width: 768px) {
+    .header-image {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+
+  /* Style the archived issue list for mobile devices */
+@media only screen and (max-width: 768px) {
+    #archiveItems {
+      display: flex;
+      flex-direction: column;
+    }
+    .archive-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+  /* Style the PDF viewer for mobile devices */
+@media only screen and (max-width: 768px) {
+    #pdfViewer {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    #pdfCanvas {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
